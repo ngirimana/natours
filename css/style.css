@@ -1,3 +1,16 @@
+/*
+0-600px: phone
+600-900px: Tablet portrait
+900-1200px:Tablet landscap 
+[1200-1800px]: where normal style apply
+1800px:Big desktop
+*/
+/*
+-phone
+-tab-port
+-lab-land
+-big-deskptop
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -34,7 +47,25 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  /*
+-phone
+-tab-port
+-tab-land
+-big-deskptop
+*/ }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 30%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
