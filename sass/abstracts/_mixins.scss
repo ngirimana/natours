@@ -26,8 +26,9 @@
 -tab-port
 -lab-land
 -big-deskptop
+ORDER:Base +typography>general layout + grid>page layout >components
+1em=16px
 */
-//1em=16px
 @mixin respond($breakpoint) {
   //600px
   @if $breakpoint==phone {
